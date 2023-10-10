@@ -1,0 +1,21 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+@layer components {
+  .icon {
+    width: 1.6rem;
+    height: 1.6rem;
+  }
+  .icon:hover{
+    color: rgb(215, 215, 26);
+    transform: scale(1.2);
+    transition: ease 200ms;
+  }
+}

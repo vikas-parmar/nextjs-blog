@@ -1,8 +1,11 @@
 import "./globals.css";
 import type { Metadata } from "next";
-import { Inter } from "next/font/google";
+import { Josefin_Sans } from "next/font/google";
 
-const inter = Inter({ subsets: ["latin"] });
+const josefin_sans = Josefin_Sans({
+  subsets: ["latin"],
+  weight: "400",
+});
 
 export const metadata: Metadata = {
   title: "BlogVoyage",
@@ -16,7 +19,12 @@ export default function RootLayout({
 }) {
   return (
     <html lang="en">
-      <body className={inter.className}>{children}</body>
+      <body
+        suppressHydrationWarning={true}
+        className={`${josefin_sans.className}`}
+      >
+        {children}
+      </body>
     </html>
   );
 }

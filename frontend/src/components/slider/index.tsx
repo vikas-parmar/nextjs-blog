@@ -1,7 +1,8 @@
 "use client";
-import img1 from "@/assets/slides/img3.jpg";
-import img2 from "@/assets/slides/img2.png";
-import img3 from "@/assets/slides/img1.png";
+import img1 from "@/assets/slides/img4.jpg";
+import img2 from "@/assets/slides/img2.jpg";
+import img3 from "@/assets/slides/img1.jpg";
+import img4 from "@/assets/slides/img3.jpg";
 
 import { Swiper, SwiperSlide } from "swiper/react";
 
@@ -23,20 +24,22 @@ const Slider = () => {
       }}
       navigation={true}
       modules={[Pagination, Navigation]}
-      className="h-[70vh]"
+      className="h-auto max-h-96"
     >
-      <SwiperSlide className="w-full h-2/4">
-        <Image src={img1} className="w-full object-cover" alt="" />
-      </SwiperSlide>
-     
-      <SwiperSlide className="w-full h-2/4">
-        <Image src={img2} className="w-full object-scale-down" alt="" />
-      </SwiperSlide>
-     
-      <SwiperSlide className="w-full h-2/4">
-        <Image src={img3} className="w-full object-bottom" alt="" />
+      <SwiperSlide>
+        <Image src={img1} className="w-full object-contain" alt="" />
       </SwiperSlide>
 
+      <SwiperSlide>
+        <Image src={img2} className="w-full object-contain" alt="" />
+      </SwiperSlide>
+
+      <SwiperSlide>
+        <Image src={img3} className="w-full object-contain" alt="" />
+      </SwiperSlide>
+      <SwiperSlide>
+        <Image src={img4} className="w-full object-contain" alt="" />
+      </SwiperSlide>
     </Swiper>
   );
 };

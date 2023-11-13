@@ -8,14 +8,37 @@
   box-sizing: border-box;
 }
 
-@layer components {
-  .icon {
-    width: 1.6rem;
-    height: 1.6rem;
+html,
+body {
+  height: 100%;
+  width: 100%;
+}
+
+@layer utilities {
+  .flex-center {
+    @apply flex justify-center items-center;
   }
-  .icon:hover{
-    color: rgb(215, 215, 26);
-    transform: scale(1.2);
-    transition: ease 200ms;
+  .icons-small {
+    @apply w-6 cursor-pointer hover:text-green hover:transition-colors;
+  }
+
+  .title {
+    @apply text-5xl md:text-7xl capitalize font-semibold leading-normal md:leading-snug;
+  }
+
+  .heading-1 {
+    @apply uppercase font-bold text-xl sm:text-2xl md:text-3xl;
+  }
+
+  .heading-2 {
+    @apply uppercase font-semibold text-lg sm:text-xl md:text-2xl;
+  }
+
+  .filled-button {
+    @apply rounded-full px-4 py-1 bg-green text-white font-semibold hover:bg-[#266326] hover:transition-colors;
+  }
+
+  .text-button {
+    @apply px-2 py-1 font-semibold hover:text-green hover:transition-colors;
   }
 }

@@ -6,47 +6,49 @@ import { Swiper, SwiperSlide } from "swiper/react";
 import { Pagination } from "swiper/modules";
 import BlogCard from "../blogCard";
 
+const blogs = [
+  {
+    name: "Blog 1",
+    path: "#",
+    bgcolor: "black",
+  },
+  {
+    name: "Blog 2",
+    path: "#",
+    bgcolor: "black",
+  },
+  {
+    name: "Blog 3",
+    path: "#",
+    bgcolor: "black",
+  },
+  {
+    name: "Blog 4",
+    path: "#",
+    bgcolor: "black",
+  },
+  {
+    name: "Blog 5",
+    path: "#",
+    bgcolor: "black",
+  },
+  {
+    name: "Blog 6",
+    path: "#",
+    bgcolor: "black",
+  },
+  {
+    name: "Blog 7",
+    path: "#",
+    bgcolor: "black",
+  },
+];
+
 const BlogsSlider = () => {
-  const blogs = [
-    {
-      name: "Blog 1",
-      path: "#",
-      bgcolor: "black",
-    },
-    {
-      name: "Blog 2",
-      path: "#",
-      bgcolor: "black",
-    },
-    {
-      name: "Blog 3",
-      path: "#",
-      bgcolor: "black",
-    },
-    {
-      name: "Blog 4",
-      path: "#",
-      bgcolor: "black",
-    },
-    {
-      name: "Blog 5",
-      path: "#",
-      bgcolor: "black",
-    },
-    {
-      name: "Blog 6",
-      path: "#",
-      bgcolor: "black",
-    },
-    {
-      name: "Blog 7",
-      path: "#",
-      bgcolor: "black",
-    },
-  ];
   return (
-    <div>
-      <h1 className="text-medium font-bold mx-2 my-1">Latest Blogs</h1>
+    <section id="blog-slider">
+      <h1 className="heading-2 text-center p-4">Latest Blogs</h1>
+
       <Swiper
         slidesPerView={1}
         spaceBetween={1}
@@ -82,7 +84,7 @@ const BlogsSlider = () => {
           );
         })}
       </Swiper>
-    </div>
+    </section>
   );
 };
 

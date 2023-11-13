@@ -10,24 +10,8 @@ const BlogCard = (data: Blog) => {
   const { name, bgcolor } = data;
 
   return (
-    <div
-      style={{
-        width: "300px",
-        height: "400px",
-        background: bgcolor,
-        display: "flex",
-        justifyContent: "center",
-        alignItems: "center",
-      }}
-    >
-      <p
-        style={{
-          color: "white",
-          fontSize: "15px",
-        }}
-      >
-        {name}
-      </p>
+    <div className="w-auto h-96 m-4 bg-bubble_gum flex-center">
+      <p className="font-bold uppercase text-white">{name}</p>
     </div>
   );
 };

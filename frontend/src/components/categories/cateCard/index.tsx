@@ -10,9 +10,9 @@ const CategoryCard = ({ name, bgcolor, path }: Category) => {
   return (
     <div
       style={{ background: bgcolor }}
-      className={`w-[300px] h-[200px] flex justify-center items-center`}
+      className="w-auto h-72 m-4 flex-center"
     >
-      <p className="font-bold text-white">{name}</p>
+      <p className="font-bold uppercase text-white">{name}</p>
     </div>
   );
 };

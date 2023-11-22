@@ -4,7 +4,15 @@ export default function AddBlog() {
   return (
     <main>
       <Navbar />
-      <h1>AddBlog Page</h1>
+      <form action="/">
+        <input type="text" name="title" id="title" placeholder="Title" />
+        <textarea
+          name="story"
+          id="userStory"
+          placeholder="Tell your story..."
+        ></textarea>
+        <input type="file" name="file" id="file" />
+      </form>
     </main>
   );
 }

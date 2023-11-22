@@ -33,7 +33,7 @@ const Footer: React.FC = () => {
           Blog
         </Link>
 
-        <Link href={"/pages/Privacy"} className="text-button">
+        <Link href={"/pages/privacy"} className="text-button">
           Privacy
         </Link>
 
